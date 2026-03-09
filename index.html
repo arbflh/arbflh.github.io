@@ -59,7 +59,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:20px 60px;display:fl
 .t-accent{color:var(--accent);}.t-green{color:var(--accent2);}
 .t-cursor{display:inline-block;width:8px;height:14px;background:var(--accent);animation:blink 1s infinite;vertical-align:middle;}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
-@keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+
 section{position:relative;z-index:1;padding:100px 60px;max-width:1300px;margin:0 auto;}
 .section-header{display:flex;align-items:baseline;gap:20px;margin-bottom:60px;}
 .section-num{font-size:11px;color:var(--accent);letter-spacing:3px;font-family:var(--mono);}
@@ -154,9 +154,7 @@ section{position:relative;z-index:1;padding:100px 60px;max-width:1300px;margin:0
 .avail-text strong{display:block;font-size:13px;margin-bottom:3px;}
 footer{position:relative;z-index:1;padding:40px 60px;border-top:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;font-size:11px;color:var(--muted);flex-wrap:wrap;gap:16px;}
 .footer-name{font-family:var(--display);font-weight:800;color:var(--accent);}
-.reveal{opacity:0;transform:translateY(30px);transition:opacity 0.6s ease,transform 0.6s ease;}
-.reveal.visible{opacity:1;transform:translateY(0);}
-.reveal-delay-1{transition-delay:0.1s;}.reveal-delay-2{transition-delay:0.2s;}.reveal-delay-3{transition-delay:0.3s;}
+
 @media(max-width:768px){nav{padding:16px 24px;}.nav-links{display:none;}#hero{padding:100px 24px 60px;}section{padding:70px 24px;}.hero-stats{gap:32px;}.edu-card{grid-template-columns:1fr;}.edu-year-block{border-right:none;border-bottom:1px solid var(--border);padding-right:0;padding-bottom:12px;}footer{padding:30px 24px;}}
 </style>
 </head>
@@ -220,19 +218,19 @@ footer{position:relative;z-index:1;padding:40px 60px;border-top:1px solid var(--
 </div>
 
 <section id="about">
-  <div class="section-header reveal"><span class="section-num">01 //</span><h2 class="section-title">À Propos</h2><div class="section-line"></div></div>
+  <div class="section-header"><span class="section-num">01 //</span><h2 class="section-title">À Propos</h2><div class="section-line"></div></div>
   <div class="about-grid">
-    <div class="about-text reveal">
+    <div class="about-text">
       <p>Étudiant en <strong>Master Cybersécurité et e-Santé</strong> à l'Université Paris Cité, je suis titulaire d'un <span class="about-highlight">double diplôme</span> — Ingénieur d'État et Master — en cybersécurité, obtenu à l'<strong>ESTIN (Béjaïa, Algérie)</strong>.</p>
       <p>Passionné par la sécurité offensive et défensive, j'ai conçu <strong>HoneySpark</strong> — un système de honeypot web intelligent intégrant un IDS Suricata et un modèle de <strong>Machine Learning (Random Forest)</strong> pour la détection automatisée des cyberattaques.</p>
       <p>Motivé, rigoureux et curieux, je recherche un <span class="about-highlight">contrat d'apprentissage d'1 an</span> en cybersécurité pour contribuer à des projets innovants.</p>
     </div>
-    <div class="info-grid reveal reveal-delay-1">
+    <div class="info-grid">
       <div class="info-item"><div class="info-label">Localisation</div><div class="info-value">Villepinte (93420)</div></div>
       <div class="info-item"><div class="info-label">Âge</div><div class="info-value">23 ans</div></div>
       <div class="info-item"><div class="info-label">Langues</div><div class="info-value">FR bilingue · EN courant</div></div>
       <div class="info-item"><div class="info-label">Mobilité</div><div class="info-value">Hybride / Présentiel</div></div>
-      <div class="info-item"><div class="info-label">Email</div><div class="info-value" style="font-size:11px"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="4d2c3f2c2f2b2821212c257d7b0d2a202c2421632e2220">[email&#160;protected]</a></div></div>
+      <div class="info-item"><div class="info-label">Email</div><div class="info-value" style="font-size:11px">arabfellah06@gmail.com</div></div>
       <div class="info-item"><div class="info-label">Téléphone</div><div class="info-value">07 59 23 48 81</div></div>
       <div class="info-item"><div class="info-label">GitHub</div><div class="info-value">@arbflh</div></div>
       <div class="info-item"><div class="info-label">LinkedIn</div><div class="info-value">@arab fellah</div></div>
@@ -243,22 +241,22 @@ footer{position:relative;z-index:1;padding:40px 60px;border-top:1px solid var(--
 
 <section id="skills" style="background:rgba(12,21,32,0.5);padding:100px 0;max-width:none">
   <div style="max-width:1300px;margin:0 auto;padding:0 60px">
-    <div class="section-header reveal"><span class="section-num">02 //</span><h2 class="section-title">Compétences</h2><div class="section-line"></div></div>
+    <div class="section-header"><span class="section-num">02 //</span><h2 class="section-title">Compétences</h2><div class="section-line"></div></div>
     <div class="skills-grid">
-      <div class="skill-card reveal"><div class="skill-icon">🛡️</div><div class="skill-cat">Sécurité &amp; Pentesting</div><div class="skill-tags"><span class="tag">Pentesting</span><span class="tag">Ethical Hacking</span><span class="tag">Cryptographie</span><span class="tag">Hashage</span><span class="tag">SIEM</span><span class="tag">Metasploit</span><span class="tag">IDS/IPS</span><span class="tag">Suricata</span></div></div>
-      <div class="skill-card reveal reveal-delay-1"><div class="skill-icon">🌐</div><div class="skill-cat">Réseaux &amp; Administration</div><div class="skill-tags"><span class="tag">TCP/IP</span><span class="tag">ISO/OSI</span><span class="tag">Wireshark</span><span class="tag">Nmap</span><span class="tag">Firewalls</span><span class="tag">Honeypots</span><span class="tag">Routing</span><span class="tag">Switching</span><span class="tag">DHCP</span><span class="tag">DNS</span><span class="tag">NAT</span></div></div>
-      <div class="skill-card reveal reveal-delay-2"><div class="skill-icon">⚙️</div><div class="skill-cat">Systèmes &amp; Virtualisation</div><div class="skill-tags"><span class="tag">Linux</span><span class="tag">Windows</span><span class="tag">VirtualBox</span><span class="tag">VMware</span><span class="tag">GNS3</span><span class="tag">Docker</span><span class="tag">Kubernetes</span><span class="tag">Cloud (GKE)</span></div></div>
-      <div class="skill-card reveal"><div class="skill-icon">💻</div><div class="skill-cat">Programmation &amp; Scripting</div><div class="skill-tags"><span class="tag">Python</span><span class="tag">Scapy</span><span class="tag">Bash</span><span class="tag">PowerShell</span><span class="tag">Socket</span><span class="tag">JavaScript</span></div></div>
-      <div class="skill-card reveal reveal-delay-1"><div class="skill-icon">🤖</div><div class="skill-cat">Data &amp; Machine Learning</div><div class="skill-tags"><span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">Matplotlib</span><span class="tag">Random Forest</span><span class="tag">SQL</span><span class="tag">MySQL</span><span class="tag">SQLite</span></div></div>
-      <div class="skill-card reveal reveal-delay-2"><div class="skill-icon">⚖️</div><div class="skill-cat">Conformité &amp; Domaines</div><div class="skill-tags"><span class="tag">RGPD</span><span class="tag">e-Santé</span><span class="tag">IoT Security</span><span class="tag">Microservices</span></div></div>
+      <div class="skill-card"><div class="skill-icon">🛡️</div><div class="skill-cat">Sécurité &amp; Pentesting</div><div class="skill-tags"><span class="tag">Pentesting</span><span class="tag">Ethical Hacking</span><span class="tag">Cryptographie</span><span class="tag">Hashage</span><span class="tag">SIEM</span><span class="tag">Metasploit</span><span class="tag">IDS/IPS</span><span class="tag">Suricata</span></div></div>
+      <div class="skill-card"><div class="skill-icon">🌐</div><div class="skill-cat">Réseaux &amp; Administration</div><div class="skill-tags"><span class="tag">TCP/IP</span><span class="tag">ISO/OSI</span><span class="tag">Wireshark</span><span class="tag">Nmap</span><span class="tag">Firewalls</span><span class="tag">Honeypots</span><span class="tag">Routing</span><span class="tag">Switching</span><span class="tag">DHCP</span><span class="tag">DNS</span><span class="tag">NAT</span></div></div>
+      <div class="skill-card"><div class="skill-icon">⚙️</div><div class="skill-cat">Systèmes &amp; Virtualisation</div><div class="skill-tags"><span class="tag">Linux</span><span class="tag">Windows</span><span class="tag">VirtualBox</span><span class="tag">VMware</span><span class="tag">GNS3</span><span class="tag">Docker</span><span class="tag">Kubernetes</span><span class="tag">Cloud (GKE)</span></div></div>
+      <div class="skill-card"><div class="skill-icon">💻</div><div class="skill-cat">Programmation &amp; Scripting</div><div class="skill-tags"><span class="tag">Python</span><span class="tag">Scapy</span><span class="tag">Bash</span><span class="tag">PowerShell</span><span class="tag">Socket</span><span class="tag">JavaScript</span></div></div>
+      <div class="skill-card"><div class="skill-icon">🤖</div><div class="skill-cat">Data &amp; Machine Learning</div><div class="skill-tags"><span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">Matplotlib</span><span class="tag">Random Forest</span><span class="tag">SQL</span><span class="tag">MySQL</span><span class="tag">SQLite</span></div></div>
+      <div class="skill-card"><div class="skill-icon">⚖️</div><div class="skill-cat">Conformité &amp; Domaines</div><div class="skill-tags"><span class="tag">RGPD</span><span class="tag">e-Santé</span><span class="tag">IoT Security</span><span class="tag">Microservices</span></div></div>
     </div>
   </div>
 </section>
 
 <section id="experience">
-  <div class="section-header reveal"><span class="section-num">03 //</span><h2 class="section-title">Expérience</h2><div class="section-line"></div></div>
+  <div class="section-header"><span class="section-num">03 //</span><h2 class="section-title">Expérience</h2><div class="section-line"></div></div>
   <div class="timeline">
-    <div class="timeline-item reveal">
+    <div class="timeline-item">
       <div class="timeline-dot"></div>
       <div class="timeline-date">Février 2025 — Juillet 2025 · 5 mois</div>
       <div class="timeline-role">Développeur Cybersécurité</div>
@@ -272,7 +270,7 @@ footer{position:relative;z-index:1;padding:40px 60px;border-top:1px solid var(--
         <div class="timeline-result">✦ Livraison d'un outil opérationnel capable d'identifier et classifier les tentatives d'intrusion</div>
       </div>
     </div>
-    <div class="timeline-item reveal reveal-delay-1">
+    <div class="timeline-item">
       <div class="timeline-dot"></div>
       <div class="timeline-date">Juin 2024 — Septembre 2024 · 3 mois</div>
       <div class="timeline-role">Stagiaire Administration Serveurs Web</div>
@@ -289,9 +287,9 @@ footer{position:relative;z-index:1;padding:40px 60px;border-top:1px solid var(--
 </section>
 
 <section id="education">
-  <div class="section-header reveal"><span class="section-num">04 //</span><h2 class="section-title">Formation</h2><div class="section-line"></div></div>
+  <div class="section-header"><span class="section-num">04 //</span><h2 class="section-title">Formation</h2><div class="section-line"></div></div>
   <div class="edu-grid">
-    <div class="edu-card reveal">
+    <div class="edu-card">
       <div class="edu-year-block">Sept. 2025<br>→ En cours</div>
       <div>
         <div class="edu-degree">Master Cybersécurité &amp; e-Santé</div>
@@ -299,7 +297,7 @@ footer{position:relative;z-index:1;padding:40px 60px;border-top:1px solid var(--
         <div class="edu-desc">Cybersécurité des systèmes, réseaux et données liés à la santé connectée (e-Santé) et à l'Internet des Objets (IoT). Sécurité des données de santé, conformité RGPD/HDS.</div>
       </div>
     </div>
-    <div class="edu-card reveal reveal-delay-1">
+    <div class="edu-card">
       <div class="edu-year-block">Déc. 2020<br>→ Juil. 2025</div>
       <div>
         <div class="edu-degree">Ingéniorat en Cybersécurité</div>
@@ -312,23 +310,23 @@ footer{position:relative;z-index:1;padding:40px 60px;border-top:1px solid var(--
 
 <section id="projects" style="background:rgba(12,21,32,0.5);padding:100px 0;max-width:none">
   <div style="max-width:1300px;margin:0 auto;padding:0 60px">
-    <div class="section-header reveal"><span class="section-num">05 //</span><h2 class="section-title">Projets</h2><div class="section-line"></div></div>
+    <div class="section-header"><span class="section-num">05 //</span><h2 class="section-title">Projets</h2><div class="section-line"></div></div>
     <div class="projects-grid">
-      <div class="project-card project-featured reveal">
+      <div class="project-card project-featured">
         <div class="project-year">2024–2025 · PROJET PHARE · EN BINÔME</div>
         <div class="project-name">HoneySpark</div>
         <div class="project-desc">Déployé un IDS Suricata pour la détection d'anomalies réseau. Développé un pipeline d'analyse des logs avec un modèle de Machine Learning (Random Forest). Implémenté un système de déclenchement automatique de honeypots selon le type d'attaque classifié.</div>
         <div class="project-result">→ Système honeypot web intelligent pour détection et analyse des cyberattaques</div>
         <span class="project-badge">Python · Suricata · Random Forest</span>
       </div>
-      <div class="project-card project-featured reveal reveal-delay-1">
+      <div class="project-card project-featured">
         <div class="project-year">2025–2026 · EN BINÔME</div>
         <div class="project-name">Architecture Microservices</div>
         <div class="project-desc">Développé 2 microservices REST en Python (FastAPI), conteneurisés avec Docker et orchestrés sur Kubernetes. Configuré une gateway Ingress Nginx et une base de données SQLite. Déployé l'infrastructure sur Google Kubernetes Engine (GKE).</div>
         <div class="project-result">→ Application accessible publiquement via 2 IPs publiques sur cluster cloud GKE</div>
         <span class="project-badge">FastAPI · Docker · Kubernetes · GKE</span>
       </div>
-      <div class="project-card reveal reveal-delay-2">
+      <div class="project-card">
         <div class="project-year">2022–2023 · EN BINÔME</div>
         <div class="project-name">Simulation d'Attaques Réseaux</div>
         <div class="project-desc">Simulé et analysé des attaques réseau (MITM, Phishing, IP Spoofing) dans un environnement virtuel sous GNS3. Capturé et analysé le trafic malveillant avec Wireshark.</div>
@@ -340,9 +338,9 @@ footer{position:relative;z-index:1;padding:40px 60px;border-top:1px solid var(--
 </section>
 
 <section id="certs">
-  <div class="section-header reveal"><span class="section-num">06 //</span><h2 class="section-title">Certifications</h2><div class="section-line"></div></div>
+  <div class="section-header"><span class="section-num">06 //</span><h2 class="section-title">Certifications</h2><div class="section-line"></div></div>
 
-  <div class="certs-group reveal">
+  <div class="certs-group">
     <div class="certs-section-title">// Cybersécurité &amp; Réseaux</div>
     <div class="certs-grid">
       <div class="cert-card"><div class="cert-icon">🎯</div><div class="cert-issuer cisco">Cisco Networking Academy</div><div class="cert-name">Ethical Hacker</div><div class="cert-date">Octobre 2024</div><span class="cert-verify" style="cursor:default"><div class="verify-badge"></div> Cisco Verified</span></div>
@@ -353,7 +351,7 @@ footer{position:relative;z-index:1;padding:40px 60px;border-top:1px solid var(--
     </div>
   </div>
 
-  <div class="certs-group reveal">
+  <div class="certs-group">
     <div class="certs-section-title">// L'Atelier RGPD — CNIL</div>
     <div class="rgpd-complete-badge"><span>✦</span> 6 / 6 modules complétés · Moyenne : 92 %</div>
     <div class="certs-grid">
@@ -380,13 +378,13 @@ footer{position:relative;z-index:1;padding:40px 60px;border-top:1px solid var(--
 </section>
 
 <section id="contact">
-  <div class="section-header reveal"><span class="section-num">07 //</span><h2 class="section-title">Contact</h2><div class="section-line"></div></div>
+  <div class="section-header"><span class="section-num">07 //</span><h2 class="section-title">Contact</h2><div class="section-line"></div></div>
   <div class="contact-wrap">
-    <div class="reveal">
+    <div class="">
       <div class="contact-cta">Travaillons ensemble.</div>
       <p class="contact-intro">Disponible pour un <strong>contrat d'apprentissage d'1 an</strong> en cybersécurité.<br><br>Rythme : S1 → 3j formation / 2j entreprise · S2 → 2j formation / 3j entreprise.<br><br>Motivé, rigoureux et curieux, je souhaite mettre mes compétences au service d'une entreprise innovante.</p>
     </div>
-    <div class="reveal reveal-delay-1">
+    <div class="">
       <div class="avail-box"><div class="status-dot"></div><div class="avail-text"><strong>Disponible pour alternance 2026</strong>Contrat apprentissage 1 an — Cybersécurité</div></div>
       <div class="contact-links">
         <a href="/cdn-cgi/l/email-protection#e78695868581828b8b868fd7d1a7808a868e8bc984888a" class="contact-link"><span class="contact-link-icon">✉️</span><div class="contact-link-info"><span class="contact-link-label">Email</span><span class="contact-link-val"><span class="__cf_email__" data-cfemail="4b2a392a292d2e27272a237b7d0b2c262a222765282426">[email&#160;protected]</span></span></div><span class="contact-link-arrow">→</span></a>
@@ -401,11 +399,12 @@ footer{position:relative;z-index:1;padding:40px 60px;border-top:1px solid var(--
 
 <footer>
   <div><span class="footer-name">Arab FELLAH</span> — Cybersecurity Engineer</div>
-  <div style="color:var(--muted);font-size:10px;letter-spacing:1px"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="4c2d3e2d2e2a2920202d247c7a0c2b212d2520622f2321">[email&#160;protected]</a> · 07 59 23 48 81</div>
+  <div style="color:var(--muted);font-size:10px;letter-spacing:1px">arabfellah06@gmail.com · 07 59 23 48 81</div>
   <div>© 2026</div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+
+<script>
 const cursor=document.getElementById('cursor');
 const ring=document.getElementById('cursorRing');
 let mx=0,my=0,rx=0,ry=0;
@@ -413,4 +412,10 @@ document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cursor.style
 (function animRing(){rx+=(mx-rx)*0.12;ry+=(my-ry)*0.12;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(animRing);})();
 document.querySelectorAll('a,button,.skill-card,.project-card,.cert-card').forEach(el=>{
   el.addEventListener('mouseenter',()=>{cursor.style.transform='translate(-50%,-50%) scale(2)';ring.style.width='60px';ring.style.height='60px';});
-  el.addEventListener('mouseleave',()=>{cursor.style.transform='translate(-50%,-50%) scale(1)';ring.style.width='40px';ring.st
+  el.addEventListener('mouseleave',()=>{cursor.style.transform='translate(-50%,-50%) scale(1)';ring.style.width='40px';ring.style.height='40px';});
+});
+const bar=document.getElementById('rgpdBar');
+if(bar){ setTimeout(()=>{ bar.style.width='100%'; }, 800); }
+</script>
+</body>
+</html>
